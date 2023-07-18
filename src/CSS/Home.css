@@ -1,0 +1,45 @@
+.home .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.home .left {
+    padding: 1rem;
+}
+
+
+.home h1 {
+    padding: 1rem 0;
+}
+
+.home .input-container {
+    padding: .2rem;
+}
+
+.home .right {
+    padding: 1rem;
+}
+
+.home .img-container {
+    width: 100%;
+    display: flex;
+}
+
+.home img {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .home .container {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+    
+}
