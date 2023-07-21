@@ -16,7 +16,7 @@ function Navbar() {
         <h1>
           coin<span className="primary">Hub</span>
         </h1>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul className={click ? "active" : "nav-menu"}>
           <li>
             <Link to="/" >Home</Link>
           </li>
@@ -34,7 +34,11 @@ function Navbar() {
           <button className="btn">Connect Wallet</button>
         </div>
         <div className="hamburger" onClick={handleClick}>
-          {click ? (<FaTimes size={20} style={{color : "#333"}} />) : (<FaBars size={20} style={{color : "#333"}} />)}
+          {click ? 
+              (<FaTimes size={20} style={{color : "#333"}} />) : 
+              (<FaBars size={20} style={{color : "#333"}} />)
+          }
+          
         </div>
       </div>
     </div>

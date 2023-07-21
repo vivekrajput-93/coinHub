@@ -8,10 +8,6 @@
     
     }
 
-
-
-
-
 .header {
     width: 100%;
     height: 90px;
@@ -74,18 +70,9 @@
         display: flex;
     }
 
-    .nav-menu {
-        position: absolute;
-        flex-direction: column;
-        justify-content: start;
-        top: 90px;
-        right: -100%;
-        width: 50%;
-        height: 200vh;
-        transition: 0.4s;
-        z-index: 2;
-        background: #fff;
-        border-left: 1px solid #eee;
+    .nav-menu li{
+        display: none;
+        visibility: hidden;
     }
 
     .btn {
@@ -93,10 +80,23 @@
         margin: .8rem;
     }
 
-
-
-    .nav-menu.active {
-        right: 0;
+    .active {
+        position: absolute;
+        flex-direction: column;
+        top: 90px;
+        right:0;
+        width: 50%;
+        height: 200vh;
+        transition: 0.6s;
+        z-index: 2;
+        background: #fff;
+        border-left: 1px solid #eee;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .active li{
+        padding: 15px;
     }
 
 }
