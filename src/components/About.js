@@ -24,7 +24,7 @@ const About = () => {
             digital currencies.
           </p>
           <div className="input-grp">
-            <button onClick={handleLearn} className="learn">
+            <button id="btn" onClick={handleLearn} className="learn">
               See More
             </button>
           </div>

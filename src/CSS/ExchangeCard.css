@@ -1,0 +1,113 @@
+ .exchange {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left : 1.5rem;
+    margin-top: 4rem;
+ }
+ 
+ 
+ .card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 22px;
+    margin: .4rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1rem;
+}
+
+.card:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.spinner-box{
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.card .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 50px;
+    margin: auto;
+    padding: .2rem 0;
+}
+
+ .card h3 {
+    font-size: .8rem;
+    padding: .5rem;
+ }
+
+ .card p {
+    font-size: .8rem;
+    padding-top: .5rem;
+ }
+
+ .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--background);
+    letter-spacing: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ }
+
+ @media screen and (max-width: 940px) {
+    .exchange {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 740px) {
+    .exchange {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+ }
+
+
+ @media screen and (max-width: 510px) {
+    .exchange {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    .card {
+        display: block;
+        padding: 6px 6px;
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        margin-bottom: 3rem;
+
+    }
+
+    .card img {
+        margin-top: 2rem;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+ }
