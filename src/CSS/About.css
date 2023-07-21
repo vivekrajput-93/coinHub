@@ -1,0 +1,167 @@
+.drip {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.second {
+  width: 50%;
+}
+
+.second img {
+  width: 100%;
+  height: 100vh;
+}
+
+.first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: #333;
+  background-color: var(--primary);
+}
+
+.first .head, .par {
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+}
+
+.first h2 {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.first p {
+  font-size: .9rem;
+  width: 75%;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.learn {
+  position: relative;
+  top: 5rem;
+  left: 3rem;
+  padding: .6rem 1.5rem .6rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.learn:hover {
+  color: #333;
+  background-color: var(--background);
+  transition: .3s ease-in;
+}
+
+.earn .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.earn .left {
+  text-align: center;
+
+}
+
+.earn img {
+  width: 300px;
+}
+
+.earn img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.earn .right p {
+  margin: 2rem;
+  margin-left: 0;
+}
+
+.offer {
+  margin: 2rem;
+  list-style-type: circle;
+}
+
+.offer li {
+  margin-bottom: 1rem;
+}
+
+.get {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.get h1 {
+  margin-bottom: 2rem;
+}
+.get p {
+  width: 70%;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.thank {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+
+
+/* Media Query for screens with a maximum width of 940px */
+@media screen and (max-width: 940px) {
+  .drip {
+    flex-direction: column-reverse;
+    height: auto; 
+  }
+
+  .second {
+    width: 100%;
+  }
+
+  .second img {
+    height: 100vh;
+  }
+
+  .first {
+    margin-top: -.5rem;
+    width: 100%;
+    padding: 2rem 1rem; 
+    height: 70vh;
+  }
+
+  .first .head, .par {
+    top: 1rem; 
+    left: 2rem; 
+  }
+
+  .learn {
+    top: 1rem; 
+    left: 2rem; 
+  }
+
+  .earn .container {
+    grid-template-columns: 1fr;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+
+
+}
+
+
