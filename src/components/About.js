@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import desk from "../assets/bit-phone.jpg";
 import "../CSS/About.css";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +7,9 @@ import Footer from "./Footer";
 
 const About = () => {
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const handleLearn = () => {
     navigate("/");
   };
@@ -74,7 +76,7 @@ const About = () => {
           on social media.
         </p>
         <div className="input-container">
-          <input type="email" placeholder="Enter your Email" />
+          <input id="btn" type="email" placeholder="Enter your Email" />
           <button id="btn">Learn More</button>
         </div>
         <p className="thank">

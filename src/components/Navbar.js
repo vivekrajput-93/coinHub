@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "../CSS/Navbar.css";
 import {FaBars, FaTimes} from "react-icons/fa"
 import { Link } from "react-router-dom";
@@ -18,16 +18,16 @@ function Navbar() {
         </h1>
         <ul className={click ? "active" : "nav-menu"}>
           <li>
-            <Link to="/" >Home</Link>
+            <Link to="/" onClick={handleClick}>Home</Link>
           </li>
           <li>
-            <Link to="/about" >About</Link>
+            <Link to="/about" onClick={handleClick}>About</Link>
           </li>
           <li>
-            <Link to="/coin">Coin</Link>
+            <Link to="/coin" onClick={handleClick}>Coin</Link>
           </li>
           <li>
-            <Link to="/exchange">Exchange</Link>
+            <Link to="/exchange" onClick={handleClick}>Exchange</Link>
           </li>
         </ul>
         <div className="btn-group">
