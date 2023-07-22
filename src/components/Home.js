@@ -4,8 +4,12 @@ import Hero from "../assets/hero-img.png";
 import Earn from "./Earn";
 import Featured from "./Featured";
 import Footer from "./Footer";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div div className="overflow">
     <div className="home">

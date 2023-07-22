@@ -10,6 +10,7 @@ function Exchange() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchExchange = async () => {
       try {
         const { data } = await axios.get(`${server}/exchanges`);
