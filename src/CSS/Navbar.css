@@ -97,6 +97,7 @@
     }
     .active li{
         padding: 15px;
+        font-weight: 600;
     }
 
 }
