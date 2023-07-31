@@ -16,7 +16,6 @@ const CoinInfo = () => {
         useEffect(() => {
             axios.get(url).then((response) => {
                 setCoin(response.data);
-                console.log(response.data)
             }).catch ((error) => {
                 console.log(error)
             })
